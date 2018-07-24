@@ -4,8 +4,7 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
-    "marked": "^0.3.6",
-    "rxjs": "5.01"
+    "marked": "^0.3.6"
   },
   "devDependencies": {
     "devtron": "*",
