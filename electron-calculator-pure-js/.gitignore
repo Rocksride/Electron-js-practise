@@ -1,0 +1,13 @@
+node_modules
+.DS_Store
+Thumbs.db
+*.log
+
+/dist
+/temp
+icons
+# ignore everything in 'app' folder what had been generated from 'src' folder
+/app/simpleCalculator.js
+/app/scientificCalculator.js
+/app/mainProcess.js
+/app/**/*.map

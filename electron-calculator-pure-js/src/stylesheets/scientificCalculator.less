@@ -1,0 +1,105 @@
+@background-primary: #1ef50a;
+html,
+body,
+main,
+article {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.display {
+    width: 100%;
+    height: 30%;
+    /* background-color: #6A99FD; */
+    background: linear-gradient(to right, rgb(30, 57, 66), rgb(65, 34, 148));
+    box-shadow: 0 1px 7x rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.result {
+    color: @background-primary;
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+.calculations {
+    color: white;
+    font-size: 20px;
+    width: 100%;
+}
+
+.keyboard {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    height: 70%;
+    background: linear-gradient(to right bottom, rgb(30, 57, 66), rgb(65, 34, 148));
+}
+
+.btn {
+    width: 20%;
+    height: calc(100%/6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid rgba(255, 255, 255, .2);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 0 1px 5px grey;
+        &:hover {
+            cursor: pointer;
+            color: white;
+            background-color: rgba(red(@background-primary), green(@background-primary), blue(@background-primary), 0.5);
+        }
+        &:active {
+            cursor: pointer;
+            background: @background-primary;
+        }
+
+        &.brackets{
+            width:10%;
+        }
+}
+.btn-last {
+    background-color: rgba(red(@background-primary), green(@background-primary), blue(@background-primary), 0.5);
+}
+.result,
+.calculations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+}
+.radians{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    left: 80%;
+    top: 10%;
+    position: absolute;
+    background: inherit;
+}
+.active {
+    color: white;
+    background: @background-primary;
+}

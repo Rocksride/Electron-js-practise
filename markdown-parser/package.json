@@ -1,0 +1,21 @@
+{
+  "name": "parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "marked": "^0.3.6",
+    "rxjs": "5.01"
+  },
+  "devDependencies": {
+    "devtron": "*",
+    "electron": "*",
+    "electron-packager": "*",
+    "eslint": "*"
+  },
+  "scripts": {
+    "start": "Electron ."
+  },
+  "author": "Rocksride",
+  "license": "ISC"
+}
